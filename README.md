@@ -126,3 +126,20 @@ public function table(Table $table): Table
 ```
 
 ✅ Note: Make sure the field name in the $data array matches the field key used in the AttachmentLibraryFileUpload::make() definition.
+
+## 📦 Changelog
+
+For a detailed list of recent changes, updates, and improvements, please refer to the [Changelog](https://github.com/victorscatolon/filament-attachment-library/blob/main/CHANGELOG.md).
+
+## 🤝 Contributing
+
+Contributions are welcome! To get started, please read the [Contribution Guide](https://github.com/victorscatolon/filament-attachment-library/blob/main/CONTRIBUTING.md).
+
+## 👨‍💻 Credits
+
+Developed and maintained by [@victorscatolon](https://github.com/victorscatolon).  
+Thanks to all the amazing contributors who help improve this package.
+
+## 📄 License
+
+This project is open-source software licensed under the [MIT License](https://github.com/victorscatolon/filament-attachment-library/blob/main/LICENSE.md).
