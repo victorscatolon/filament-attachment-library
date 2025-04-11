@@ -1,0 +1,46 @@
+{
+    "name": "victorscatolon/filament-attachment-library",
+    "description": "Easily manage file attachments across multiple models using a clean, polymorphic approach in your Filament app.",
+    "keywords": [
+        "laravel",
+        "filament",
+        "attachment",
+        "file upload",
+        "polymorphic",
+        "morphMany",
+        "relationship",
+        "media",
+        "library"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VictorScatolon\\FilamentAttachmentLibrary\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Hugo Scatolon de Souza",
+            "email": "victor.scatolon@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0",
+        "filament/support": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VictorScatolon\\FilamentAttachmentLibrary\\FilamentAttachmentLibraryServiceProvider"
+            ]
+        }
+    },
+    "support": {
+        "issues": "https://github.com/victorscatolon/filament-attachment-library/issues",
+        "source": "https://github.com/victorscatolon/filament-attachment-library"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
