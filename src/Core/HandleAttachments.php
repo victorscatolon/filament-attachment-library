@@ -32,19 +32,12 @@ trait HandleAttachments
     protected function handleAttachments(Model $record, array $filenames): void
     {
         $existing = $record->attachments()->pluck('id', 'filename')->toArray();
-        $rawState = $this->form->getRawState()['attachments'] ?? [];
         $newAttachments = [];
 
         foreach ($filenames as $filename) {
             if (!isset($existing[$filename])) {
-                $attachmentData = $rawState[$filename] ?? [];
                 $newAttachments[] = [
                     'filename' => $filename,
-                    'mime_type' => $attachmentData['mime_type'] ?? null,
-                    'disk' => $attachmentData['disk'] ?? null,
-                    'path' => $attachmentData['path'] ?? null,
-                    'size' => $attachmentData['size'] ?? null,
-                    'hash' => $attachmentData['hash'] ?? null,
                 ];
             }
         }

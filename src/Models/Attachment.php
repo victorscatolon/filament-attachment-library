@@ -16,15 +16,9 @@ class Attachment extends Model
         'attachable_id',
         'attachable_type',
         'filename',
-        'mime_type',
-        'disk',
-        'path',
-        'size',
-        'hash',
     ];
 
     protected $casts = [
-        'size' => 'integer',
         'deleted_at' => 'datetime',
     ];
 

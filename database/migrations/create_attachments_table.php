@@ -15,13 +15,7 @@ return new class extends Migration
             $table->unsignedBigInteger('attachable_id');
             $table->string('attachable_type')->index();
             $table->index(['attachable_type', 'attachable_id']);
-
             $table->string('filename')->index();
-            $table->string('mime_type')->nullable();
-            $table->string('disk')->nullable();
-            $table->string('path')->index();
-            $table->unsignedBigInteger('size')->nullable();
-            $table->string('hash', 64)->nullable(); // SHA-256
             $table->softDeletes();
             $table->timestamps();
         });
